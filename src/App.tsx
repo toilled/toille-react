@@ -42,7 +42,7 @@ function App() {
         </ul>
         <ul className="animate__animated animate__slideInRight">
           {pages.map(page => {
-            return <li onClick={() => setCurrentPage(page)}><a className='pointer'>{page.title}</a></li>
+            return <li onClick={() => setCurrentPage(page)} key={page.name}><a className='pointer'>{page.title}</a></li>
           })}
         </ul>
       </nav>
